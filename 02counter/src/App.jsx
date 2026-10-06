@@ -1,7 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "./assets/vite.svg";
+// import heroImg from "./assets/hero.png";
 import "./App.css";
 
 function App() {
@@ -11,7 +11,9 @@ function App() {
   const addValue = () => {
     console.log("add value clicked", counter);
     // let counter = counter + 1;
-    setCounter(counter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+
   };
   if (counter > 20) {
     setCounter(20);
